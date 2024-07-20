@@ -1,24 +1,30 @@
 package WebdriverCommands;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.Point;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+
 import io.github.bonigarcia.wdm.WebDriverManager;
 
-public class B4_Clear_command {
+public class D2_getLocation_command {
 	
 	public static void main (String args[]) throws InterruptedException {
 
 	WebDriverManager.chromedriver().setup();
     WebDriver driver = new ChromeDriver();
-    
-    driver.get( "http://omayo.blogspot.com/");
     driver.manage().window().maximize();
+
+    driver.get("http://omayo.blogspot.com/");
     
-    Thread.sleep(3000);
-    driver.findElement(By.id("textbox1")).clear();
-    System.out.println("Clear the texts inside the textbox ");
-    }
-	
-	
+    //Write code here
+   Point point = driver.findElement(By.id("ta1")).getLocation();
+   
+   System.out.println("Height of the text area field is: "+point.x);
+   
+   System.out.println("Width of the text area field is: "+point.y);
+   
+    driver.close();
+   
+	}
 }

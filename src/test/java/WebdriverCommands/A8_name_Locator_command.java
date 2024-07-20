@@ -9,7 +9,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 public class A8_name_Locator_command {
 	
     public static void main(String[] args) {
-        
+       
     	 WebDriverManager.chromedriver().setup();
          WebDriver driver = new ChromeDriver();
          
@@ -18,8 +18,7 @@ public class A8_name_Locator_command {
          
          driver.findElement(By.name("q"));
          System.out.println("Identified Element using name");
-
-     
+  
          
 
         

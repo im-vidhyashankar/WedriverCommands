@@ -10,7 +10,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 public class A9_sendKeys_command {
 	
     public static void main(String[] args) {
-        
+       
     	 WebDriverManager.chromedriver().setup();
          WebDriver driver = new ChromeDriver();
          
@@ -23,7 +23,6 @@ public class A9_sendKeys_command {
          
          driver.findElement(By.id("input-password")).sendKeys(Keys.ENTER);
          
-
         
  }
 

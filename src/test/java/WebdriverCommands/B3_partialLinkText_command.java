@@ -16,7 +16,7 @@ public class B3_partialLinkText_command {
     driver.manage().window().maximize();
     driver.findElement(By.partialLinkText("automated"));
     System.out.println("Identified Element using partialLinkText");
-    
+   
 }
 	
 	

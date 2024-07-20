@@ -16,6 +16,6 @@ public class B8_close_command {
     Thread.sleep(3000);
 	System.out.println("Browser closing");
     driver.close();
-	
+
 	}
 }

@@ -9,7 +9,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 public class A6_click_command {
 	
     public static void main(String[] args) {
-        
+       
     	 WebDriverManager.chromedriver().setup();
          WebDriver driver = new ChromeDriver();
          
@@ -18,10 +18,6 @@ public class A6_click_command {
          
          driver.findElement(By. id("alert1")).click();
          System.out.println("Cliked on alert popup");
-
-        
-         
-
         
  }
 

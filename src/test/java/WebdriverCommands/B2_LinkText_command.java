@@ -9,7 +9,7 @@ public class B2_LinkText_command {
 	
 	public static void main (String args[]) {
 
-	WebDriverManager.chromedriver().setup();
+		WebDriverManager.chromedriver().setup();
     WebDriver driver = new ChromeDriver();
     
     driver.get( "http://omayo.blogspot.com/");

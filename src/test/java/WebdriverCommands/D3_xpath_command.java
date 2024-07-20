@@ -1,20 +1,27 @@
 package WebdriverCommands;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+
 import io.github.bonigarcia.wdm.WebDriverManager;
 
-public class B5_getText_command {
+public class D3_xpath_command {
 	
 	public static void main (String args[]) throws InterruptedException {
 
 	WebDriverManager.chromedriver().setup();
     WebDriver driver = new ChromeDriver();
-    
-    driver.get( "http://omayo.blogspot.com/");
     driver.manage().window().maximize();
-    Thread.sleep(3000);
-    System.out.println("The application is getting close");
+
+    driver.get("http://omayo.blogspot.com/");
+    
+    //Write code here
+    String xpath= driver.findElement(By.xpath("//button[@value='LogIn']")).getText();
+    System.out.println("Located Xpath expression: "+ xpath);
+
+  
     driver.close();
+   
 	}
 }

@@ -4,6 +4,7 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 import org. openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
+
 public class A2_maximize_command {
 
 	public static void main(String[] args) {
@@ -12,9 +13,8 @@ public class A2_maximize_command {
            WebDriver driver = new ChromeDriver();
            
            driver.manage().window().maximize();
-           
-           
-    }
+          
+               }
 
 }
 	
